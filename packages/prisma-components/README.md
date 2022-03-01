@@ -2,7 +2,9 @@
 
 This library will contains the Button component agnostic of any styles which means it will contain only the algorithm to make the Button works.
 
-!!! info The hook **useStates** is here to allow the client to simulate state for the Button. It uses the notion of context in ReactJS. So keep it if you want the whole solution to work. Of course, if you have a better solution, we are looking forward to see your solution!
+ℹ️ The hook **useStates** is here to allow the client to simulate state for the Button. It uses the notion of context in ReactJS. So keep it if you want the whole solution to work. Of course, if you have a better solution, we are looking forward to see your solution!
+
+ℹ️ The code is here to help but you can changes anything you want to improve it
 
 <br />
 

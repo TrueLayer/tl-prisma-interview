@@ -44,15 +44,16 @@ The project will have to contain 2 themes in order to style the Button component
 
 <br /><br />
 
-# Icon
+# Icon {#Icon}
+The icon will use the free version of `fontawesome`. All the needed dependencies have already been installed in the root `package.json`. You just have to import what you need.
 
 ## Property {#Properties}
 
-The icon will use the free version of `fontawesome` and will have the following properties
+The icon will have the following properties
 
 | Name     | Description                                       |
 | -------- | ------------------------------------------------- |
-| `icon`   | Fontawesome icon to display (type IconDefinition) |
+| `icon`   | Fontawesome icon to display (type `IconDefinition`) |
 
 <br />
 
@@ -66,7 +67,7 @@ The icon component will have no state at is a no clickable icon
 
 <br /><br />
 
-# Button
+# Button {#Button}
 
 ## Property {#Properties}
 
@@ -78,7 +79,7 @@ The button will have the following properties
 | `icon`    | Icon to display on the left side   |
 | `onClick` | Handler when the button is clicked |
 
-ℹ️ For the `icon` property, use the created icon component
+ℹ️ For the `icon` property, use the [Icon component](#icon)
 
 For the `Theme 1`, the button will have the extra following properties
 
@@ -107,7 +108,7 @@ Add the following tag in your index.html
 | `fontSize`: md          | `fontSize`: md          |
 | `padding`: sm md        | `padding`: sm md        |
 | `cursor`: pointer       | `cursor`: pointer       |
-| `border-radius`: normal | `border-radius`: normal |
+|                         | `border-radius`: normal |
 
 When a button has an icon, apply the following style on the label
 | Theme 1                    | Theme 2                    |

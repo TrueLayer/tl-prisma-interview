@@ -1,7 +1,7 @@
 import { IconDefinition } from './fontawesome'
 
 /**
- * TODO: Replace the TH1Button by the one coming from the library 'prisma-theme-one'
+ * TODO: Remove the TH2Button and replace it by the one coming from the library 'prisma-theme-one'
  */
  interface TH2ButtonProps {
     label: string
@@ -15,12 +15,12 @@ export const TH2Button = (props: TH2ButtonProps) => {
 }
 
 /**
- * TODO: Replace the TH1Theme by the one coming from the library 'prisma-theme-one'
+ * TODO: Remove the TH2Theme and replace it by the one coming from the library 'prisma-theme-one'
  */
 export const TH2Theme = {}
 
 /**
- * TODO: Set the customisations matching the enabled state of the TH1Button
- * See the Customisations/States section in the taask description
+ * TODO: Set the customisations matching the enabled state of the TH2Button
+ * See the Customisations/States section in the task description
  */
 export const TH2Customisations = {}

@@ -8,7 +8,7 @@ This library will contains the Button component style accordingly to the Theme 2
 
 - The theme has to be created by respecting the [specifications](../../README.md#Themes)
 - The style for the Button component has to be created by respecting the [specifications](../../README.md#Styles)
-- All components have to be styled accordingly to the Theme 1 has to be exported to be used by the client library
+- All components have to be styled accordingly to the Theme 2 has to be exported to be used by the client library
 
 <br />
 

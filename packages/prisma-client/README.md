@@ -1,8 +1,8 @@
 # Overview [:house:](../../README.md#Challenge) {#Overview}
 
-This client is an SPA allowing to test the result of your implementation.
+This client is an SPA allowing to test the result of your implementation. It represents your future users and how they will use your components. So, all your components have to be conform with the specifications.
 
-This client has been created in order to make the test finished within 3 hours but there are defininitely some improvements to make at any level.
+This client has been created in order to make the test finished within 3 hours but there are definitely some improvements to make at any level.
 
 <br /><br />
 
@@ -10,7 +10,7 @@ This client has been created in order to make the test finished within 3 hours b
 
 Your solution has to produce the same previews for the Button component. 
 
-!!! info For the design and components to build that client, it is up to you to keep the existing or do your own. Of course, more you do more you can convince us you are the right fit for the company.
+ℹ️ For the design and components to build that client, it is up to you to keep the existing or do your own. Of course, more you do more you can convince us you are the right fit for the company.
 
 <br />
 
@@ -132,11 +132,13 @@ Your solution has to produce the same previews for the Button component.
 # Mandatory
 
 - In the file `src/externals/prisma-theme-one.tsx`
-  - Use your TH1Button + Th1Theme
+  - Use your TH1Button + Th1Theme instead of the temporary code
   - Set the TH1Customisations to match the [**enabled**](../../README.md#States) state of the TH1Button
+  - Check TH1Button proposes only the properties defined in the specifications (use the intelliSense of your IDE in the App.tsx file)
 - In the file `src/externals/prisma-theme-two.tsx`
-  - Use your TH2Button + Th2Theme
+  - Use your TH2Button + Th2Theme instead of the temporary code
   - Set the TH2Customisations to match the [**enabled**](../../README.md#States)  state of the TH2Button
+  - Check TH2Button proposes only the properties defined in the specifications (use the intelliSense of your IDE in the App.tsx file)
 
 <br /><br />
 
