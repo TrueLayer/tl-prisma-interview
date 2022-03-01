@@ -7,9 +7,10 @@ import { PlaygroundCustomisations, PlaygroundStates } from "./components"
 const Preview = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
   height: 100%;
   border-left: 1px solid #EFF3F6;
+  padding: 16px;
+  box-sizing: border-box;
 `
 
 interface PlaygroundProps {
@@ -32,15 +33,28 @@ export const Playground = (props: PlaygroundProps) => {
       setCustomisations({ ...customisations, [id]: value })
     }
 
+    const renderChild = () => {
+      return React.Children.toArray(children).map((child: any, index: number) => {
+        const customisedChild = React.cloneElement(child, {
+          className: `sim-${state}`,
+          ...customisations,
+        })
+        return (
+        <Grid key={`item-${index + 1}`} item xs={12} sm={6} alignSelf='stretch'>
+            {customisedChild}
+        </Grid>
+        )
+      })
+    }
+
     const renderPreview = () => {
-      return React.Children.toArray(children).map((child: any, index: number) => (
-        <Preview key={`preview-${index + 1}`} style={{ margin: '5px',  }}>
-          {React.cloneElement(child, {
-            className: `sim-${state}`,
-            ...customisations,
-          })}
+      return (
+        <Preview>
+          <Grid container spacing={5} alignItems='stretch' alignContent='stretch'>
+              {renderChild()}
+          </Grid>
         </Preview>
-      ))
+      )
     }
 
     return (

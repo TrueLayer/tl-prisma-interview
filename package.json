@@ -14,5 +14,10 @@
   },
   "devDependencies": {
     "lerna": "^3.20.2"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-solid-svg-icons": "^6.0.0",
+    "@fortawesome/react-fontawesome": "^0.1.4"
   }
 }

@@ -1,8 +1,11 @@
+import { IconDefinition } from './fontawesome'
+
 /**
  * TODO: Replace the TH1Button by the one coming from the library 'prisma-theme-one'
  */
  interface TH2ButtonProps {
     label: string
+    icon?: IconDefinition
 }
 
 export const TH2Button = (props: TH2ButtonProps) => {
