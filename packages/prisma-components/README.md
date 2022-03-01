@@ -8,9 +8,9 @@ This library will contains the Button component agnostic of any styles which mea
 
 # Acceptance criteria
 
-- The Button component has to be created by respecting the [specifications](../../README.md#Properties)
+- All components have to be created by respecting the [specifications](../../README.md#Properties)
 - No style has to be created (styled, css, less, etc)
-- The Button component has to be exported to be used by the themes library
+- All components have to be exported to be used by the themes library
 
 <br />
 

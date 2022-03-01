@@ -202,7 +202,8 @@ To avoid that, TrueLayer is building its Design System by producing **CLEAN** an
 > So keep everyone in mind during your technical choices.
 
 > ℹ️ The scaffold has been created to help you but you are free to update anything you want to show us your ability to produce clean and maintainable code.
-
+> 
+> ℹ️ There is not limit of time to do the test so please take your time to propose something that can make a different in our daily job. We are looking for people who care about quality to decrease the time of development.
 
 <br /><br />
 

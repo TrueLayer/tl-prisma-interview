@@ -1,7 +1,14 @@
 import React from 'react'
+import styled from 'styled-components'
 import { StatesContext } from '../../externals/prisma-components'
 import { Grid } from "../../externals/material-ui"
 import { State } from "../State"
+
+const GridItem = styled(Grid)`
+    & > * {
+        width: 100%
+    }
+`
 
 interface StatesProps {
     states: any
@@ -13,9 +20,9 @@ export const States = (props: StatesProps) => {
 
     const renderChild = () => {
         return React.Children.toArray(children).map((child, index) => (
-            <Grid key={`item-${index + 1}`} item xs={12} sm={6} alignSelf='stretch'>
+            <GridItem key={`item-${index + 1}`} item xs={12} sm={6} alignSelf='stretch'>
                 {child}
-            </Grid>
+            </GridItem>
         ))
     }
 

@@ -4,6 +4,12 @@ import { Paper, Grid } from '../../externals/material-ui'
 import { StatesContext } from '../../hooks/useStates'
 import { PlaygroundCustomisations, PlaygroundStates } from "./components"
 
+const GridItem = styled(Grid)`
+    & > * {
+        width: 100%
+    }
+`
+
 const Preview = styled.div`
   display: flex;
   align-items: center;
@@ -40,9 +46,9 @@ export const Playground = (props: PlaygroundProps) => {
           ...customisations,
         })
         return (
-        <Grid key={`item-${index + 1}`} item xs={12} sm={6} alignSelf='stretch'>
+        <GridItem key={`item-${index + 1}`} item xs={12} sm={6} alignSelf='stretch'>
             {customisedChild}
-        </Grid>
+        </GridItem>
         )
       })
     }
