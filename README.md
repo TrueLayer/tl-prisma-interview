@@ -60,13 +60,13 @@ The icon will have the following properties
 
 ## Styles {#Styles}
 
-The icon component will have no style at is a simple wrapper around fontawesome icon
+The icon component will have no style as it is a simple wrapper around fontawesome icon
 
 <br />
 
 ## States {#States}
 
-The icon component will have no state at is a no clickable icon
+The icon component will have no state as it is not clickable icon
 
 <br /><br />
 
