@@ -24,7 +24,7 @@ Finally, you will have to create a consumer of this styled component, the `clien
 
 ## Themes {#Themes}
 
-The project will have to contain 2 themes in order to style the Button component accordingly
+The project will have to contain 2 themes in order to style the components correctly
 
 | Category   | Sub category  | Theme 1     | Value      | Theme 1      | Value    |
 | ---------- | ------------- | ----------  |----------- |-----------   | -------- |
@@ -45,24 +45,27 @@ The project will have to contain 2 themes in order to style the Button component
 <br /><br />
 
 # Icon {#Icon}
+
 The icon will use the free version of `fontawesome`. All the needed dependencies have already been installed in the root `package.json`. You just have to import what you need.
 
 ## Property {#Properties}
 
 The icon will have the following properties
 
-| Name     | Description                                       |
-| -------- | ------------------------------------------------- |
+| Name     | Description                                         |
+| -------- | --------------------------------------------------- |
 | `icon`   | Fontawesome icon to display (type `IconDefinition`) |
 
 <br />
 
 ## Styles {#Styles}
+
 The icon component will have no style at is a simple wrapper around fontawesome icon
 
 <br />
 
 ## States {#States}
+
 The icon component will have no state at is a no clickable icon
 
 <br /><br />
@@ -73,13 +76,15 @@ The icon component will have no state at is a no clickable icon
 
 The button will have the following properties
 
-| Name      | Description                        |
-| --------- | ---------------------------------- |
-| `label`   | Label of the button                |
-| `icon`    | Icon to display on the left side   |
-| `onClick` | Handler when the button is clicked |
+| Name      | Description                                                                    |
+| --------- | ------------------------------------------------------------------------------ |
+| `label`   | Label of the button                                                            |
+| `icon`    | Fontawesome icon to display on the left of the label (type `IconDefinition`)   |
+| `onClick` | Handler triggered when the button is clicked                                   |
 
-ℹ️ For the `icon` property, use the [Icon component](#icon)
+❗ To display the `fontawesome` icon in the button, you have to use the [Icon component](#icon) created below!
+
+<br />
 
 For the `Theme 1`, the button will have the extra following properties
 
@@ -110,6 +115,8 @@ Add the following tag in your index.html
 | `cursor`: pointer       | `cursor`: pointer       |
 |                         | `border-radius`: normal |
 
+<br />
+
 When a button has an icon, apply the following style on the label
 | Theme 1                    | Theme 2                    |
 | ---------------------------| -------------------------- |
@@ -118,6 +125,8 @@ When a button has an icon, apply the following style on the label
 
 The gap between the icon and the label has to be `12px`
 
+<br />
+
 For the `Theme 1`, when a button has an outbound icon, apply the following style on the label
 | Theme 1                    |
 | ---------------------------|
@@ -125,6 +134,8 @@ For the `Theme 1`, when a button has an outbound icon, apply the following style
 | `textTransform`: uppercase |
 
 The gap between the label and the outbound icon has to be `14px`
+
+<br />
 
 For the `Theme 1`, when a button has an icon and outbound icon, apply the following style on the label
 | Theme 1                    |
@@ -195,7 +206,7 @@ To avoid that, TrueLayer is building its Design System by producing **CLEAN** an
 > - Can I know in a few seconds where I have to go to fix a bug by analysing the keywords of an issue coming from a user?
 > - Can my users have a clear understanding of the available components?
 > - etc....
-> 
+>
 > Of course, finishing the test is important as it shows us you can deliver a solution that conforms to the initial specifications.
 > But we are going to focus more on your aptitude to produce code in line with the quality expected by a Design System.
 >
@@ -203,7 +214,7 @@ To avoid that, TrueLayer is building its Design System by producing **CLEAN** an
 > So keep everyone in mind during your technical choices.
 
 > ℹ️ The scaffold has been created to help you but you are free to update anything you want to show us your ability to produce clean and maintainable code.
-> 
+>
 > ℹ️ There is not limit of time to do the test so please take your time to propose something that can make a different in our daily job. We are looking for people who care about quality to decrease the time of development.
 
 <br /><br />
