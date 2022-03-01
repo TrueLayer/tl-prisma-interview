@@ -48,11 +48,11 @@ The project will have to contain 2 themes in order to style the Button component
 
 ## Property {#Properties}
 
-The icon will use the free version of *fontawesome* and will have the following properties
+The icon will use the free version of `fontawesome` and will have the following properties
 
 | Name     | Description                                       |
 | -------- | ------------------------------------------------- |
-| icon     | Fontawesome icon to display (type IconDefinition) |
+| `icon`   | Fontawesome icon to display (type IconDefinition) |
 
 <br />
 
@@ -72,19 +72,19 @@ The icon component will have no state at is a no clickable icon
 
 The button will have the following properties
 
-| Name     | Description                        |
-| -------- | ---------------------------------- |
-| label    | Label of the button                |
-| icon     | Icon to display on the left side   |
-| onClick  | Handler when the button is clicked |
+| Name      | Description                        |
+| --------- | ---------------------------------- |
+| `label`   | Label of the button                |
+| `icon`    | Icon to display on the left side   |
+| `onClick` | Handler when the button is clicked |
 
-ℹ️ For the icon property, use the created icon component
+ℹ️ For the `icon` property, use the created icon component
 
-For the `Theme 1` only, the button will have the extra following properties
+For the `Theme 1`, the button will have the extra following properties
 
-| Name     | Description                                             |
-| -------- | ------------------------------------------------------- |
-| outbound | True if the outbound icon is displayed, false otherwise |
+| Name      | Description                                             |
+| --------- | ------------------------------------------------------- |
+| `outbound`| True if the outbound icon is displayed, false otherwise |
 
 The outbound icon used will be the [angle right](https://fontawesome.com/v5/icons/angle-right?s=solid)
 
@@ -117,7 +117,7 @@ When a button has an icon, apply the following style on the label
 
 The gap between the icon and the label has to be `12px`
 
-For the `Theme 1` only, when a button has an outbound icon, apply the following style on the label
+For the `Theme 1`, when a button has an outbound icon, apply the following style on the label
 | Theme 1                    |
 | ---------------------------|
 | `fontWeight`: bold         |
@@ -125,14 +125,14 @@ For the `Theme 1` only, when a button has an outbound icon, apply the following 
 
 The gap between the label and the outbound icon has to be `14px`
 
-For the `Theme 1` only, when a button has an icon and outbound icon, apply the following style on the label
+For the `Theme 1`, when a button has an icon and outbound icon, apply the following style on the label
 | Theme 1                    |
 | ---------------------------|
 | `fontStyle`: italic        |
 | `fontWeight`: bold         |
 | `textTransform`: uppercase |
 
-❗ Do not use any css selector as we want you to propose an alternative. If you have to use a css selector please justify it but it is not what we really want to see but happy to be convinced
+❗ Do not use any CSS selector as we want you to propose an alternative. If you have to use it please justify it but it is not what we really want to see but happy to be convinced
 
 <br />
 
