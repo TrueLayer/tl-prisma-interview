@@ -1,6 +1,7 @@
 import { TH1Button, TH1Theme, TH1Customisations} from './externals/prisma-theme-one'
 import { TH2Button, TH2Theme, TH2Customisations } from './externals/prisma-theme-two'
 import { ThemeDemo } from "./components"
+import { faSolidUser } from './externals/fontawesome'
 import './App.css';
 
 function App() {
@@ -12,7 +13,10 @@ function App() {
           theme={TH1Theme} 
           customisations={TH1Customisations}
         >
-          <TH1Button label='Ok' />
+          <TH1Button label='Ok'  />
+          <TH1Button label='Ok' outbound />
+          <TH1Button label='Ok' icon={faSolidUser} />
+          <TH1Button label='Ok' icon={faSolidUser} outbound />
         </ThemeDemo>
         <ThemeDemo 
           title='Theme 2'
@@ -21,6 +25,7 @@ function App() {
           customisations={TH2Customisations}
         >
             <TH2Button label='Ok' />
+            <TH2Button label='Ok' icon={faSolidUser} />
         </ThemeDemo>
       </div>
   );

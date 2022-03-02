@@ -1,12 +1,18 @@
 import styled from 'styled-components'
-import { Card, CardContent, Typography } from "../../externals/material-ui"
+import { Card as MUCard, CardContent, Typography } from "../../externals/material-ui"
+
+const Card = styled(MUCard)`
+  height: 100%;
+`
 
 const CardPreview = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
-  height: 100px;
+  justify-items: stretch;
+  justify-content: stretch;
+  min-height: 100px;
   border-bottom: 1px solid #EFF3F6;
+  padding: 10px;
 `
 
 interface StateProps {
@@ -18,7 +24,7 @@ interface StateProps {
 export const State = (props: StateProps) => {
     const { children, title, description } = props
     return (
-        <Card sx={{ height: '100%' }}>
+        <Card>
           <CardPreview>{children}</CardPreview>
           <CardContent>
             <Typography gutterBottom variant="h6" component="div">

@@ -7,6 +7,7 @@ const Root = styled.div`
     display: flex;
     flex-direction: column;
     align-items: stretch;
+    padding: 16px;
 `
 
 interface PlaygroundStatesProps {

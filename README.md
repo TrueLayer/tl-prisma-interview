@@ -14,13 +14,17 @@ We would like you to face simplified version of this challenge. The idea is to c
 
 Finally, you will have to create a consumer of this styled component, the `client`, to show use cases and a playground.
 
+<br />
+
+❗❗❗ Take time to read the whole README especially the `Expectations` section below as it explains what we expect from you
+
 <br /><br />
 
 # Specification
 
 ## Themes {#Themes}
 
-The project will have to contain 2 themes in order to style the Button component accordingly
+The project will have to contain 2 themes in order to style the components correctly
 
 | Category   | Sub category  | Theme 1     | Value      | Theme 1      | Value    |
 | ---------- | ------------- | ----------  |----------- |-----------   | -------- |
@@ -40,16 +44,55 @@ The project will have to contain 2 themes in order to style the Button component
 
 <br /><br />
 
-# Button
+# Icon {#Icon}
+
+The icon will use the free version of `fontawesome`. All the needed dependencies have already been installed in the root `package.json`. You just have to import what you need.
+
+## Property {#Properties}
+
+The icon will have the following properties
+
+| Name     | Description                                         |
+| -------- | --------------------------------------------------- |
+| `icon`   | Fontawesome icon to display (type `IconDefinition`) |
+
+<br />
+
+## Styles {#Styles}
+
+The icon component will have no style as it is a simple wrapper around fontawesome icon
+
+<br />
+
+## States {#States}
+
+The icon component will have no state as it is not clickable icon
+
+<br /><br />
+
+# Button {#Button}
 
 ## Property {#Properties}
 
 The button will have the following properties
 
-| Name     | Description                        |
-| -------- | ---------------------------------- | 
-| label    | Label of the button                |
-| onClick  | Handler when the button is clicked |
+| Name      | Description                                                                    |
+| --------- | ------------------------------------------------------------------------------ |
+| `label`   | Label of the button                                                            |
+| `icon`    | Fontawesome icon to display on the left of the label (type `IconDefinition`)   |
+| `onClick` | Handler triggered when the button is clicked                                   |
+
+❗ To display the `fontawesome` icon in the button, you have to use the [Icon component](#icon) created below!
+
+<br />
+
+For the `Theme 1`, the button will have the extra following properties
+
+| Name      | Description                                             |
+| --------- | ------------------------------------------------------- |
+| `outbound`| True if the outbound icon is displayed, false otherwise |
+
+The outbound icon used will be the [angle right](https://fontawesome.com/v5/icons/angle-right?s=solid)
 
 <br />
 
@@ -65,12 +108,43 @@ Add the following tag in your index.html
 ```
 
 | Theme 1                 | Theme 2                 |
-| ------------------------| ----------------------- | 
+| ------------------------| ----------------------- |
 | `fontFamily`: default   | `fontFamily`: default   |
 | `fontSize`: md          | `fontSize`: md          |
 | `padding`: sm md        | `padding`: sm md        |
 | `cursor`: pointer       | `cursor`: pointer       |
-| `border-radius`: normal | `border-radius`: normal |
+|                         | `border-radius`: normal |
+
+<br />
+
+When a button has an icon, apply the following style on the label
+| Theme 1                    | Theme 2                    |
+| ---------------------------| -------------------------- |
+| `fontStyle`: italic        | `fontWeight`: bold         |
+| `textTransform`: uppercase | `textTransform`: uppercase |
+
+The gap between the icon and the label has to be `12px`
+
+<br />
+
+For the `Theme 1`, when a button has an outbound icon, apply the following style on the label
+| Theme 1                    |
+| ---------------------------|
+| `fontWeight`: bold         |
+| `textTransform`: uppercase |
+
+The gap between the label and the outbound icon has to be `14px`
+
+<br />
+
+For the `Theme 1`, when a button has an icon and outbound icon, apply the following style on the label
+| Theme 1                    |
+| ---------------------------|
+| `fontStyle`: italic        |
+| `fontWeight`: bold         |
+| `textTransform`: uppercase |
+
+❗ Do not use any CSS selector as we want you to propose an alternative. If you have to use it please justify it but it is not what we really want to see but happy to be convinced
 
 <br />
 
@@ -78,27 +152,28 @@ Add the following tag in your index.html
 
 The button will have 4 states with a specific style for each theme
 
-[enabled_theme-one]: https://paper-attachments.dropbox.com/s_1ED7F95DE83B435129F996FCDC35BFDDB3C66B49ED7AF0A5D9EB6E8018CA7F26_1629278805349_image.png
-[enabled_theme-two]: https://paper-attachments.dropbox.com/s_1ED7F95DE83B435129F996FCDC35BFDDB3C66B49ED7AF0A5D9EB6E8018CA7F26_1629278763764_image.png
-[hover_theme-one]: https://paper-attachments.dropbox.com/s_1ED7F95DE83B435129F996FCDC35BFDDB3C66B49ED7AF0A5D9EB6E8018CA7F26_1629278817470_image.png
-[hover_theme-two]: https://paper-attachments.dropbox.com/s_1ED7F95DE83B435129F996FCDC35BFDDB3C66B49ED7AF0A5D9EB6E8018CA7F26_1629278773659_image.png
-[focus_theme-one]: https://paper-attachments.dropbox.com/s_1ED7F95DE83B435129F996FCDC35BFDDB3C66B49ED7AF0A5D9EB6E8018CA7F26_1629278819267_image.png
-[focus_theme-two]: https://paper-attachments.dropbox.com/s_1ED7F95DE83B435129F996FCDC35BFDDB3C66B49ED7AF0A5D9EB6E8018CA7F26_1629278777532_image.png
-[disabled_theme-one]: https://paper-attachments.dropbox.com/s_1ED7F95DE83B435129F996FCDC35BFDDB3C66B49ED7AF0A5D9EB6E8018CA7F26_1629278835274_image.png
-[disabled_theme-two]: https://paper-attachments.dropbox.com/s_1ED7F95DE83B435129F996FCDC35BFDDB3C66B49ED7AF0A5D9EB6E8018CA7F26_1629278789256_image.png
+[enabled_theme-one]: https://paper-attachments.dropbox.com/s_9B88CA148BFA7516A81DCB4A636D5A2B0DC716BA2BE32DF25B4D3FD6A4A318BB_1646132752847_image.png
+[enabled_theme-two]: https://paper-attachments.dropbox.com/s_9B88CA148BFA7516A81DCB4A636D5A2B0DC716BA2BE32DF25B4D3FD6A4A318BB_1646133198476_image.png
+[hover_theme-one]: https://paper-attachments.dropbox.com/s_9B88CA148BFA7516A81DCB4A636D5A2B0DC716BA2BE32DF25B4D3FD6A4A318BB_1646132770023_image.png
+[hover_theme-two]: https://paper-attachments.dropbox.com/s_9B88CA148BFA7516A81DCB4A636D5A2B0DC716BA2BE32DF25B4D3FD6A4A318BB_1646133213050_image.png
+[focus_theme-one]: https://paper-attachments.dropbox.com/s_9B88CA148BFA7516A81DCB4A636D5A2B0DC716BA2BE32DF25B4D3FD6A4A318BB_1646132788222_image.png
+[focus_theme-two]: https://paper-attachments.dropbox.com/s_9B88CA148BFA7516A81DCB4A636D5A2B0DC716BA2BE32DF25B4D3FD6A4A318BB_1646133230740_image.png
+[disabled_theme-one]: https://paper-attachments.dropbox.com/s_9B88CA148BFA7516A81DCB4A636D5A2B0DC716BA2BE32DF25B4D3FD6A4A318BB_1646132799637_image.png
+[disabled_theme-two]: https://paper-attachments.dropbox.com/s_9B88CA148BFA7516A81DCB4A636D5A2B0DC716BA2BE32DF25B4D3FD6A4A318BB_1646133251131_image.png
 
-|          | Theme 1                                                                                          |                    | Theme 2                                                                                                 |                    |
+|          |     <div style="width:200px">Theme 1</div>                                   |                    |  <div style="width:200px">Theme 2</div>                                                                                                   |                    |
 | -------- | ------------------------------------------------------------------------------------------------ | ------------------ | ------------------------------------------------------------------------------------------------------- | ------------------ |
 | Enabled  | `color`: white<br>`bgColor`: azure<br>`border`: none<br>`opacity`: normal                        | ![enabled_theme-one]  | `color`: sun<br>`bgColor`: white<br>`border`: 1px solid sun<br>`opacity`: normal                        | ![enabled_theme-two]  |
 | Hover    | `color`: white<br>`bgColor`: cloud burst<br>`border`: none<br>`opacity`: normal                  | ![hover_theme-one]    | `color`: white<br>`bgColor`: sun<br>`border`: 1px solid sun<br>`opacity`: normal                        | ![hover_theme-two]    |
 | Focus    | `color`: white<br>`bgColor`: cloud burst<br>`border`: none<br>`opacity`: normal                  | ![focus_theme-one]    | `color`: white<br>`bgColor`: sun<br>`border`: 1px solid sun<br>`opacity`: normal                        | ![focus_theme-two]    |
 | Disabled | `color`: white<br>`bgColor`: azure<br>`border`: none<br>`opacity`: disabled<br>`cursor`: default | ![disabled_theme-one] | `color`: sun<br>`bgColor`: white<br>`border`: 1px solid sun<br>`opacity`: disabled<br>`cursor`: default | ![disabled_theme-two] |
 
-!!! warning For the disabled state, add the style to prevent the user to trigger any actions
+❗ For the disabled state, add the style to prevent the user to trigger any actions
 
 <br />
 
 ## Customisations
+
 The button will have some customisations specific to each theme that will override the default value of the theme
 
 |              | Description                                                                       | Theme 1 | Description                                                                                                                                                                                               | Theme 2 |
@@ -111,18 +186,36 @@ The button will have some customisations specific to each theme that will overri
 
 # Expectations
 
-A Design System is a tool that developers use to build quickly more complex projects by respecting TrueLayer brand. So, it can not have a negative impact for them such as:
+A Design System is a tool that developers use to build quickly more complex projects by respecting the TrueLayer brand. So, it can not have a negative impact for them such as:
 
 - Releasing buggy components - we want to be confident in the quality of our components
-- Slow release frequency - we want to release as often as possible for small things and following a roadmap for the rest.
+- Slow release frequency - we want to release as often as possible for small things and follow a roadmap for the rest.
 - Slow release time - we want the time between the end of the development and the projects’ dependencies upgrade as slow as possible
 - etc
 
-To avoid that, TrueLayer is building its Design System by producing clean and maintainable code.
+To avoid that, TrueLayer is building its Design System by producing **CLEAN** and **MAINTAINABLE** code.
 
-!!! warning We want you to have the same high level of quality when doing your test project. You are going to be evaluate on that.
+> ❗ We want you to have the same high level of quality when doing your test project. **You are going to be EVALUATE on that**.
+>
+> For example, ask yourself
+>
+> - Can I add a new feature on the Button component?
+> - Can I add a new variant of the Button components for a specific theme?
+> - Can I add new customisation on the Button component for a specific theme?
+> - Can I understand my solution by a simple look (no concentration needed just a smooth read)
+> - Can I know in a few seconds where I have to go to fix a bug by analysing the keywords of an issue coming from a user?
+> - Can my users have a clear understanding of the available components?
+> - etc....
+>
+> Of course, finishing the test is important as it shows us you can deliver a solution that conforms to the initial specifications.
+> But we are going to focus more on your aptitude to produce code in line with the quality expected by a Design System.
+>
+> ❗ Do not forget that a good Design System is a system that everyone can have a good experience with, from the developers to the users going through no technical people such as copyrighter.
+> So keep everyone in mind during your technical choices.
 
-!!! info The scaffold has been created to help you but you are free to update anything you want to show us your ability to produce clean and maintainable code.
+> ℹ️ The scaffold has been created to help you but you are free to update anything you want to show us your ability to produce clean and maintainable code.
+>
+> ℹ️ There is not limit of time to do the test so please take your time to propose something that can make a different in our daily job. We are looking for people who care about quality to decrease the time of development.
 
 <br /><br />
 
@@ -136,9 +229,10 @@ yarn build
 yarn start
 ```
 
-!!! warning You have to run `yarn build` first before running `yarn start`. You're more than welcome to modify the script if you feel it can be improved
+❗ You have to run `yarn build` first before running `yarn start`. You're more than welcome to modify the script if you feel it can be improved
 
 # Appendinx
+
 - [**Client**](./packages/prisma-client/README.md#Overview)
 - [**Components**](./packages/prisma-components/README.md#Overview)
 - [**theme-one**](./packages/prisma-theme-one/README.md#Overview)
