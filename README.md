@@ -26,7 +26,7 @@ Finally, you will have to create a consumer of this styled component, the `clien
 
 The project will have to contain 2 themes in order to style the components correctly
 
-| Category   | Sub category  | Theme 1     | Value      | Theme 1      | Value    |
+| Category   | Sub category  | Theme 1     | Value      | Theme 2      | Value    |
 | ---------- | ------------- | ----------  |----------- |-----------   | -------- |
 | Colour     |               | azure       | #058ED8    | sun          | #F7AB1B  |
 |            |               | cloud burst | #093554    | kashmir blue | #44689A  |
